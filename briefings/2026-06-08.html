@@ -29,23 +29,20 @@ details.fold[open]>summary::after{content:'－'}
 .area-head .count{font-size:12px;color:var(--muted);font-weight:600;letter-spacing:.04em;text-transform:uppercase}
 .area-breakdown{font-size:14px;color:#42505a;background:var(--soft);border-left:2px solid var(--gold);border-radius:0 10px 10px 0;padding:13px 18px;margin:16px 0 20px;font-style:italic}
 .sublabel{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:26px 0 11px}
-details.lead{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:9px;overflow:hidden;transition:.18s}
-details.lead:hover{border-color:#d7cdb8;box-shadow:0 8px 26px rgba(22,36,46,.06)}
-details.lead[open]{box-shadow:0 8px 26px rgba(22,36,46,.07)}
-details.lead>summary{cursor:pointer;list-style:none;display:flex;align-items:center;gap:11px;padding:15px 18px}
-details.lead>summary::-webkit-details-marker{display:none}
-.utag{font-size:9.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:4px;flex-shrink:0;width:58px;text-align:center}
-.utag.high{background:#f4e2dd;color:#9b3024}.utag.med{background:#f3ead2;color:#8a6a1d}.utag.low,.utag.medium{}
-.utag.low{background:#eceae3;color:#7a8089}.utag.medium{background:#f3ead2;color:#8a6a1d}
-.s-co{font-weight:700;font-size:15px;color:var(--ink)}
-.s-date{font-size:12px;color:var(--muted);font-weight:600;white-space:nowrap;font-variant:tabular-nums}
-.s-hook{font-size:13px;color:#6a7480;flex:1;min-width:100px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.fit{font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:3px 9px;border-radius:5px;background:#dcebd0;white-space:nowrap;background:#dbeae3;color:#0a6b5d}
-.fit.theory{background:#f3ead2;color:#8a6a1d}.fit.integ{background:#e3e8ee;color:#2c4a63}
+.legend{font-size:12px;color:var(--muted);margin:14px 0 0;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.lead{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;padding:16px 19px;transition:.18s}
+.lead:hover{border-color:#d7cdb8;box-shadow:0 8px 26px rgba(22,36,46,.06)}
+.ltop{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:9px}
+.utag{font-size:9.5px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 9px;border-radius:5px;flex-shrink:0}
+.utag.high{background:#f1d9d2;color:#9b3024}.utag.med,.utag.medium{background:#f2e8cf;color:#876618}.utag.low{background:#e7e8e3;color:#6f7680}
+.s-co{font-weight:700;font-size:16px;color:var(--ink)}
+.s-date{font-size:12px;color:var(--muted);font-weight:600;white-space:nowrap;font-variant:tabular-nums;margin-left:auto}
+.fit{font-size:10px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;padding:3px 9px;border-radius:5px;white-space:nowrap;background:#dbeae3;color:#0a6b5d}
+.fit.theory{background:#f2e8cf;color:#876618}.fit.integ{background:#e3e8ee;color:#2c4a63}
 .pill{font-size:10px;font-weight:700;padding:2px 8px;border-radius:20px;white-space:nowrap}
 .pill.seen{background:#ece6f5;color:#6b4ea3}.pill.warm{background:#f6ecd5;color:#94701a}
-.lead-body{padding:0 18px 16px;border-top:1px solid var(--soft);font-size:13.5px;color:#3b4954}
-.lead-body .ln{margin:10px 0}.lead-body b{color:var(--ink)}
+.lwhat{font-size:15px;color:var(--ink);line-height:1.5;margin:2px 0 6px;font-weight:600}
+.lwhy{font-size:13px;color:#56636e;margin:5px 0}.lwhy b{color:var(--ink)}
 .angle{background:#eef2f0;border:1px solid #e0e8e4;border-radius:9px;padding:11px 14px;color:#0a4a40;margin:11px 0;font-size:13.5px}
 .foot{font-size:11.5px;color:#9aa1a8;margin-top:7px}.foot a{color:var(--accent);text-decoration:none;font-weight:600}
 .cb{display:inline-flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);cursor:pointer;margin-top:12px;user-select:none;font-weight:600}
@@ -73,180 +70,145 @@ details.lead>summary::-webkit-details-marker{display:none}
   <h1 class="serif">Maritime Signal Digest</h1>
   <div class="meta">2026-06-08 · 9 leads · 3 news · 1 competitor item(s)</div></div>
   <details class="fold" open><summary>This week, in brief</summary><div class="body"><h2>Maritime Signal Digest</h2></div></details>
+  <div class="legend"><b>Timing:</b>&nbsp; <span class="utag high">Urgent</span> reach out this week &nbsp;·&nbsp; <span class="utag med">Soon</span> this month &nbsp;·&nbsp; <span class="utag low">Watch</span> keep on radar</div>
   <section class="area" id="area-ship">
   <div class="area-head"><h2 class="serif">Shipping &amp; Offshore</h2><span class="count">9 lead(s)</span></div>
   <div class="area-breakdown">9 lead(s) this week — dominant theme: <b>Voyage-optimisation adoption</b>. In play: Ocean Network Express, Citrosuco, Western Bulk, Trafigura, Knutsen LNG France. Plus 3 news item(s).</div>
-  <div id="leads-ship"><details class="lead" data-sid="sig_817b4983b4832a8a" data-area="ship">
-  <summary>
-    <span class="utag med">Soon</span>
+  <div id="leads-ship"><div class="lead" data-sid="sig_817b4983b4832a8a" data-area="ship">
+  <div class="ltop">
+    <span class="utag med" title="Soon — reach out this month">Soon</span>
     <span class="s-co">Ocean Network Express</span>
+    <span class="fit">Pilot</span>
+    <span class="pill seen">↩ seen before</span>
     <span class="s-date">Jun 4, 2025</span>
-    <span class="fit ">Pilot</span>
-    <span class="pill seen">↩ seen before</span>
-    <span class="s-hook">Wärtsilä Fit4Power solution to deliver significant fuel and …</span>
-  </summary>
-  <div class="lead-body">
-    <div class="ln">Wärtsilä Fit4Power solution to deliver significant fuel and emission savings for Ocean Network Express containership</div>
-    <div class="ln"><b>Why it fits:</b> large containership operator pursuing fuel savings</div>
-    <div class="angle">✉️ Stack 4-9% currents-based routing savings on top of engine optimisation for ONE&#x27;s fleet.</div>
-    <div class="ln"><b>Contact:</b> company-only — find the person in your CRM</div>
-    
-    <div class="foot">Vessel refit / system upgrade · wartsila.com · <a href="https://www.wartsila.com/media/news/04-06-2025-wartsila-fit4power-solution-to-deliver-significant-fuel-and-emission-savings-for-ocean-network-express-containership-3592857" target="_blank">source ↗</a></div>
-    <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_817b4983b4832a8a"> Mark contacted</label>
   </div>
-</details>
-<details class="lead" data-sid="sig_656666ec7d38c26c" data-area="ship">
-  <summary>
-    <span class="utag low">Watch</span>
+  <div class="lwhat">Wärtsilä Fit4Power solution to deliver significant fuel and emission savings for Ocean Network Express containership</div>
+  <div class="angle">✉️ <b>The play:</b> Stack 4-9% currents-based routing savings on top of engine optimisation for ONE&#x27;s fleet.</div>
+  <div class="lwhy"><b>Why it's a fit:</b> large containership operator pursuing fuel savings · <b>Contact:</b> company-only — find the person yourself</div>
+  
+  <div class="foot">Vessel refit / system upgrade · wartsila.com · <a href="https://www.wartsila.com/media/news/04-06-2025-wartsila-fit4power-solution-to-deliver-significant-fuel-and-emission-savings-for-ocean-network-express-containership-3592857" target="_blank">source ↗</a></div>
+  <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_817b4983b4832a8a"> Mark contacted</label>
+</div>
+<div class="lead" data-sid="sig_656666ec7d38c26c" data-area="ship">
+  <div class="ltop">
+    <span class="utag low" title="Watch — keep on your radar">Watch</span>
     <span class="s-co">Citrosuco</span>
+    <span class="fit">Pilot</span>
+    <span class="pill seen">↩ seen before</span>
     <span class="s-date">Aug 26, 2025</span>
-    <span class="fit ">Pilot</span>
-    <span class="pill seen">↩ seen before</span>
-    <span class="s-hook">Citrosuco launches first long-haul voyage with B24 biodiesel…</span>
-  </summary>
-  <div class="lead-body">
-    <div class="ln">Citrosuco launches first long-haul voyage with B24 biodiesel on Carlos Fischer vessel</div>
-    <div class="ln"><b>Why it fits:</b> cargo owner running long-haul transport, fuel-focused</div>
-    <div class="angle">✉️ Add currents-based routing savings to their long-haul juice carrier voyages.</div>
-    <div class="ln"><b>Contact:</b> company-only — find the person in your CRM</div>
-    
-    <div class="foot">CII / ETS / FuelEU move · datamarnews.com · <a href="https://datamarnews.com/noticias/citrosuco-launches-first-long-haul-voyage-with-b24-biodiesel-on-carlos-fischer-vessel/" target="_blank">source ↗</a></div>
-    <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_656666ec7d38c26c"> Mark contacted</label>
   </div>
-</details>
-<details class="lead" data-sid="sig_3f5e46ac52a56250" data-area="ship">
-  <summary>
-    <span class="utag med">Soon</span>
+  <div class="lwhat">Citrosuco launches first long-haul voyage with B24 biodiesel on Carlos Fischer vessel</div>
+  <div class="angle">✉️ <b>The play:</b> Add currents-based routing savings to their long-haul juice carrier voyages.</div>
+  <div class="lwhy"><b>Why it's a fit:</b> cargo owner running long-haul transport, fuel-focused · <b>Contact:</b> company-only — find the person yourself</div>
+  
+  <div class="foot">CII / ETS / FuelEU move · datamarnews.com · <a href="https://datamarnews.com/noticias/citrosuco-launches-first-long-haul-voyage-with-b24-biodiesel-on-carlos-fischer-vessel/" target="_blank">source ↗</a></div>
+  <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_656666ec7d38c26c"> Mark contacted</label>
+</div>
+<div class="lead" data-sid="sig_3f5e46ac52a56250" data-area="ship">
+  <div class="ltop">
+    <span class="utag med" title="Soon — reach out this month">Soon</span>
     <span class="s-co">Western Bulk</span>
+    <span class="fit integ">Integration/API</span>
+    <span class="pill warm">⭐ warm contact</span><span class="pill seen">↩ seen before</span>
     <span class="s-date">Mar 11, 2026</span>
-    <span class="fit integ">Integration/API</span>
-    <span class="pill warm">⭐ warm</span><span class="pill seen">↩ seen before</span>
-    <span class="s-hook">Western Bulk Adopts ZeroNorth&#x27;s Voyage Optimisation Technology</span>
-  </summary>
-  <div class="lead-body">
-    <div class="ln">Western Bulk Adopts ZeroNorth&#x27;s Voyage Optimisation Technology</div>
-    <div class="ln"><b>Why it fits:</b> dry bulk operator just adopted a competitor&#x27;s routing</div>
-    <div class="angle">✉️ Offer Western Bulk our 3km currents layer to feed/outperform their new ZeroNorth setup on slow-heavy bulk legs.</div>
-    <div class="ln"><b>Contact:</b> company-only — find the person in your CRM</div>
-    <div class="ln">⏰ <b>Follow-up:</b> 2026-09-11 — Re-approach after ZeroNorth deployment beds in; pitch currents data feed.</div>
-    <div class="foot">Voyage-optimisation adoption · shipandbunker.com · <a href="https://shipandbunker.com/news/world/929619-western-bulk-adopts-zeronorths-voyage-optimisation-technology" target="_blank">source ↗</a></div>
-    <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_3f5e46ac52a56250"> Mark contacted</label>
   </div>
-</details>
-<details class="lead" data-sid="sig_20610d14fa338b06" data-area="ship">
-  <summary>
-    <span class="utag med">Soon</span>
+  <div class="lwhat">Western Bulk Adopts ZeroNorth&#x27;s Voyage Optimisation Technology</div>
+  <div class="angle">✉️ <b>The play:</b> Offer Western Bulk our 3km currents layer to feed/outperform their new ZeroNorth setup on slow-heavy bulk legs.</div>
+  <div class="lwhy"><b>Why it's a fit:</b> dry bulk operator just adopted a competitor&#x27;s routing · <b>Contact:</b> company-only — find the person yourself</div>
+  <div class="lwhy">⏰ <b>Follow up:</b> 2026-09-11 — Re-approach after ZeroNorth deployment beds in; pitch currents data feed.</div>
+  <div class="foot">Voyage-optimisation adoption · shipandbunker.com · <a href="https://shipandbunker.com/news/world/929619-western-bulk-adopts-zeronorths-voyage-optimisation-technology" target="_blank">source ↗</a></div>
+  <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_3f5e46ac52a56250"> Mark contacted</label>
+</div>
+<div class="lead" data-sid="sig_20610d14fa338b06" data-area="ship">
+  <div class="ltop">
+    <span class="utag med" title="Soon — reach out this month">Soon</span>
     <span class="s-co">Trafigura</span>
+    <span class="fit integ">Integration/API</span>
+    <span class="pill seen">↩ seen before</span>
     <span class="s-date">Jul 9, 2025</span>
+  </div>
+  <div class="lwhat">Trafigura announces strategic alliance with maritime technology provider ZeroNorth</div>
+  <div class="angle">✉️ <b>The play:</b> Offer high-res current data as an upstream feed to enrich ZeroNorth routing across the 350-vessel fleet.</div>
+  <div class="lwhy"><b>Why it's a fit:</b> Large controlled fleet adopting voyage optimisation; current data could feed platform · <b>Contact:</b> company-only — find the person yourself</div>
+  <div class="lwhy">⏰ <b>Follow up:</b> 2026-01-09 — Re-approach 6mo into ZeroNorth rollout to position current-data API</div>
+  <div class="foot">Voyage-optimisation adoption · trafigura.com · <a href="https://www.trafigura.com/news-and-insights/press-releases/2025/trafigura-announces-strategic-alliance-with-maritime-technology-provider-zeronorth/" target="_blank">source ↗</a></div>
+  <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_20610d14fa338b06"> Mark contacted</label>
+</div>
+<div class="lead" data-sid="sig_790854537892afc1" data-area="ship">
+  <div class="ltop">
+    <span class="utag med" title="Soon — reach out this month">Soon</span>
+    <span class="s-co">Knutsen LNG France</span>
     <span class="fit integ">Integration/API</span>
     <span class="pill seen">↩ seen before</span>
-    <span class="s-hook">Trafigura announces strategic alliance with maritime technol…</span>
-  </summary>
-  <div class="lead-body">
-    <div class="ln">Trafigura announces strategic alliance with maritime technology provider ZeroNorth</div>
-    <div class="ln"><b>Why it fits:</b> Large controlled fleet adopting voyage optimisation; current data could feed platform</div>
-    <div class="angle">✉️ Offer high-res current data as an upstream feed to enrich ZeroNorth routing across the 350-vessel fleet.</div>
-    <div class="ln"><b>Contact:</b> company-only — find the person in your CRM</div>
-    <div class="ln">⏰ <b>Follow-up:</b> 2026-01-09 — Re-approach 6mo into ZeroNorth rollout to position current-data API</div>
-    <div class="foot">Voyage-optimisation adoption · trafigura.com · <a href="https://www.trafigura.com/news-and-insights/press-releases/2025/trafigura-announces-strategic-alliance-with-maritime-technology-provider-zeronorth/" target="_blank">source ↗</a></div>
-    <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_20610d14fa338b06"> Mark contacted</label>
-  </div>
-</details>
-<details class="lead" data-sid="sig_790854537892afc1" data-area="ship">
-  <summary>
-    <span class="utag med">Soon</span>
-    <span class="s-co">Knutsen LNG France</span>
     <span class="s-date">Jan 14, 2026</span>
-    <span class="fit integ">Integration/API</span>
-    <span class="pill seen">↩ seen before</span>
-    <span class="s-hook">Knutsen LNG expands digital routing fleetwide</span>
-  </summary>
-  <div class="lead-body">
-    <div class="ln">Knutsen LNG expands digital routing fleetwide</div>
-    <div class="ln"><b>Why it fits:</b> LNG fleet rolled out Syroco routing; slow-heavy vessels benefit from high-res currents</div>
-    <div class="angle">✉️ Pitch HIRES-CURRENTS as a data layer beneath Syroco to sharpen LNG tanker routing fuel savings.</div>
-    <div class="ln"><b>Contact:</b> company-only — find the person in your CRM</div>
-    <div class="ln">⏰ <b>Follow-up:</b> 2026-07-13 — Check Syroco deployment maturity, position current-data API</div>
-    <div class="foot">Voyage-optimisation adoption · thedigitalship.com · <a href="https://thedigitalship.com/news/electronics-navigation/knutsen-lng-expands-digital-routing-fleetwide/" target="_blank">source ↗</a></div>
-    <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_790854537892afc1"> Mark contacted</label>
   </div>
-</details>
-<details class="lead" data-sid="sig_7bcf22d39515282f" data-area="ship">
-  <summary>
-    <span class="utag med">Soon</span>
+  <div class="lwhat">Knutsen LNG expands digital routing fleetwide</div>
+  <div class="angle">✉️ <b>The play:</b> Pitch HIRES-CURRENTS as a data layer beneath Syroco to sharpen LNG tanker routing fuel savings.</div>
+  <div class="lwhy"><b>Why it's a fit:</b> LNG fleet rolled out Syroco routing; slow-heavy vessels benefit from high-res currents · <b>Contact:</b> company-only — find the person yourself</div>
+  <div class="lwhy">⏰ <b>Follow up:</b> 2026-07-13 — Check Syroco deployment maturity, position current-data API</div>
+  <div class="foot">Voyage-optimisation adoption · thedigitalship.com · <a href="https://thedigitalship.com/news/electronics-navigation/knutsen-lng-expands-digital-routing-fleetwide/" target="_blank">source ↗</a></div>
+  <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_790854537892afc1"> Mark contacted</label>
+</div>
+<div class="lead" data-sid="sig_7bcf22d39515282f" data-area="ship">
+  <div class="ltop">
+    <span class="utag med" title="Soon — reach out this month">Soon</span>
     <span class="s-co">Knutsen LNG France</span>
+    <span class="fit integ">Integration/API</span>
+    <span class="pill warm">⭐ warm contact</span><span class="pill seen">↩ seen before</span>
     <span class="s-date">Jan 13, 2026</span>
-    <span class="fit integ">Integration/API</span>
-    <span class="pill warm">⭐ warm</span><span class="pill seen">↩ seen before</span>
-    <span class="s-hook">Knutsen expands Syroco deployment across LNG tanker fleet</span>
-  </summary>
-  <div class="lead-body">
-    <div class="ln">Knutsen expands Syroco deployment across LNG tanker fleet</div>
-    <div class="ln"><b>Why it fits:</b> Same Syroco fleetwide expansion; current data integration opportunity</div>
-    <div class="angle">✉️ Offer current-resolved data to complement Syroco Live across the LNG fleet.</div>
-    <div class="ln"><b>Contact:</b> company-only — find the person in your CRM</div>
-    <div class="ln">⏰ <b>Follow-up:</b> 2026-07-13 — Duplicate of Knutsen/Syroco; re-approach as API supplier</div>
-    <div class="foot">Voyage-optimisation adoption · smartmaritimenetwork.com · <a href="https://smartmaritimenetwork.com/2026/01/13/knutsen-expands-syroco-deployment-across-lng-tanker-fleet/" target="_blank">source ↗</a></div>
-    <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_7bcf22d39515282f"> Mark contacted</label>
   </div>
-</details>
-<details class="lead" data-sid="sig_20e78add7e6ddb9f" data-area="ship">
-  <summary>
-    <span class="utag med">Soon</span>
+  <div class="lwhat">Knutsen expands Syroco deployment across LNG tanker fleet</div>
+  <div class="angle">✉️ <b>The play:</b> Offer current-resolved data to complement Syroco Live across the LNG fleet.</div>
+  <div class="lwhy"><b>Why it's a fit:</b> Same Syroco fleetwide expansion; current data integration opportunity · <b>Contact:</b> company-only — find the person yourself</div>
+  <div class="lwhy">⏰ <b>Follow up:</b> 2026-07-13 — Duplicate of Knutsen/Syroco; re-approach as API supplier</div>
+  <div class="foot">Voyage-optimisation adoption · smartmaritimenetwork.com · <a href="https://smartmaritimenetwork.com/2026/01/13/knutsen-expands-syroco-deployment-across-lng-tanker-fleet/" target="_blank">source ↗</a></div>
+  <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_7bcf22d39515282f"> Mark contacted</label>
+</div>
+<div class="lead" data-sid="sig_20e78add7e6ddb9f" data-area="ship">
+  <div class="ltop">
+    <span class="utag med" title="Soon — reach out this month">Soon</span>
     <span class="s-co">ABB</span>
+    <span class="fit integ">Integration/API</span>
+    <span class="pill seen">↩ seen before</span>
     <span class="s-date">Feb 17, 2026</span>
-    <span class="fit integ">Integration/API</span>
-    <span class="pill seen">↩ seen before</span>
-    <span class="s-hook">Weather the Storm with Optimal Speed Routing</span>
-  </summary>
-  <div class="lead-body">
-    <div class="ln">Weather the Storm with Optimal Speed Routing</div>
-    <div class="ln"><b>Why it fits:</b> Routing tool could ingest Amphitrite high-res currents via API</div>
-    <div class="angle">✉️ Offer to feed ABB&#x27;s Optimal Speed Routing with 3km depth-resolved current forecasts via MetOcean API to sharpen speed/route decisions.</div>
-    <div class="ln"><b>Contact:</b> company-only — find the person in your CRM</div>
-    
-    <div class="foot">Voyage-optimisation adoption · abb.com · <a href="https://www.abb.com/global/en/company/innovation/news/marine-optimal-speed-routing" target="_blank">source ↗</a></div>
-    <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_20e78add7e6ddb9f"> Mark contacted</label>
   </div>
-</details>
-<details class="lead" data-sid="sig_996ed6b889801a41" data-area="ship">
-  <summary>
-    <span class="utag med">Soon</span>
+  <div class="lwhat">Weather the Storm with Optimal Speed Routing</div>
+  <div class="angle">✉️ <b>The play:</b> Offer to feed ABB&#x27;s Optimal Speed Routing with 3km depth-resolved current forecasts via MetOcean API to sharpen speed/route decisions.</div>
+  <div class="lwhy"><b>Why it's a fit:</b> Routing tool could ingest Amphitrite high-res currents via API · <b>Contact:</b> company-only — find the person yourself</div>
+  
+  <div class="foot">Voyage-optimisation adoption · abb.com · <a href="https://www.abb.com/global/en/company/innovation/news/marine-optimal-speed-routing" target="_blank">source ↗</a></div>
+  <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_20e78add7e6ddb9f"> Mark contacted</label>
+</div>
+<div class="lead" data-sid="sig_996ed6b889801a41" data-area="ship">
+  <div class="ltop">
+    <span class="utag med" title="Soon — reach out this month">Soon</span>
     <span class="s-co">Anglo-Eastern</span>
+    <span class="fit integ">Integration/API</span>
+    <span class="pill seen">↩ seen before</span>
     <span class="s-date">Oct 9, 2025</span>
-    <span class="fit integ">Integration/API</span>
-    <span class="pill seen">↩ seen before</span>
-    <span class="s-hook">Anglo-Eastern introduces SAPS digital platform for maritime …</span>
-  </summary>
-  <div class="lead-body">
-    <div class="ln">Anglo-Eastern introduces SAPS digital platform for maritime decarbonisation</div>
-    <div class="ln"><b>Why it fits:</b> New SAPS platform does route optimisation, could ingest currents</div>
-    <div class="angle">✉️ Show how high-res currents could improve SAPS route optimisation beyond weather-only data for Anglo-Eastern&#x27;s managed fleet.</div>
-    <div class="ln"><b>Contact:</b> company-only — find the person in your CRM</div>
-    
-    <div class="foot">Voyage-optimisation adoption · ship-technology.com · <a href="https://www.ship-technology.com/news/anglo-eastern-saps-digital-platform/" target="_blank">source ↗</a></div>
-    <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_996ed6b889801a41"> Mark contacted</label>
   </div>
-</details>
-<details class="lead" data-sid="sig_4a2a96d5c17e2c0c" data-area="ship">
-  <summary>
-    <span class="utag low">Watch</span>
+  <div class="lwhat">Anglo-Eastern introduces SAPS digital platform for maritime decarbonisation</div>
+  <div class="angle">✉️ <b>The play:</b> Show how high-res currents could improve SAPS route optimisation beyond weather-only data for Anglo-Eastern&#x27;s managed fleet.</div>
+  <div class="lwhy"><b>Why it's a fit:</b> New SAPS platform does route optimisation, could ingest currents · <b>Contact:</b> company-only — find the person yourself</div>
+  
+  <div class="foot">Voyage-optimisation adoption · ship-technology.com · <a href="https://www.ship-technology.com/news/anglo-eastern-saps-digital-platform/" target="_blank">source ↗</a></div>
+  <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_996ed6b889801a41"> Mark contacted</label>
+</div>
+<div class="lead" data-sid="sig_4a2a96d5c17e2c0c" data-area="ship">
+  <div class="ltop">
+    <span class="utag low" title="Watch — keep on your radar">Watch</span>
     <span class="s-co">Norwegian Cruise Line Holdings</span>
-    <span class="s-date">Nov 19, 2025</span>
     <span class="fit integ">Integration/API</span>
     <span class="pill seen">↩ seen before</span>
-    <span class="s-hook">Case study: How fleet optimisation helps Norwegian Cruise Li…</span>
-  </summary>
-  <div class="lead-body">
-    <div class="ln">Case study: How fleet optimisation helps Norwegian Cruise Line Holdings Ltd. in 6 powerful ways</div>
-    <div class="ln"><b>Why it fits:</b> Cruise fleet using Wärtsilä benchmarking; current data could improve performance models</div>
-    <div class="angle">✉️ Offer high-res currents and per-vessel models to sharpen NCLH fleet performance benchmarking.</div>
-    <div class="ln"><b>Contact:</b> company-only — find the person in your CRM</div>
-    
-    <div class="foot">Voyage-optimisation adoption · wartsila.com · <a href="https://www.wartsila.com/insights/case-study/norwegian-cruise-line-holdings-ltd" target="_blank">source ↗</a></div>
-    <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_4a2a96d5c17e2c0c"> Mark contacted</label>
+    <span class="s-date">Nov 19, 2025</span>
   </div>
-</details></div>
+  <div class="lwhat">Case study: How fleet optimisation helps Norwegian Cruise Line Holdings Ltd. in 6 powerful ways</div>
+  <div class="angle">✉️ <b>The play:</b> Offer high-res currents and per-vessel models to sharpen NCLH fleet performance benchmarking.</div>
+  <div class="lwhy"><b>Why it's a fit:</b> Cruise fleet using Wärtsilä benchmarking; current data could improve performance models · <b>Contact:</b> company-only — find the person yourself</div>
+  
+  <div class="foot">Voyage-optimisation adoption · wartsila.com · <a href="https://www.wartsila.com/insights/case-study/norwegian-cruise-line-holdings-ltd" target="_blank">source ↗</a></div>
+  <label class="cb"><input type="checkbox" class="contacted-cb" data-sid="sig_4a2a96d5c17e2c0c"> Mark contacted</label>
+</div></div>
   <div class="sublabel">📰 News / good-to-know</div><div class="news"><div class="it"><a href="https://container-news.com/singapore-los-angeles-and-long-beach-renew-green-and-digital-shipping-corridor-agreement/" target="_blank">Singapore, Los Angeles and Long Beach renew green and digital shipping corridor agreement</a> — container-news.com</div>
 <div class="it"><a href="https://www.ajot.com/news/singapore-long-beach-and-los-angeles-ports-renew-green-and-digital-shipping-corridor-agreement" target="_blank">Singapore, Long Beach and Los Angeles Ports renew Green and Digital Shipping Corridor agreement</a> — ajot.com</div>
 <div class="it"><a href="https://www.wartsila.com/insights/article/3-unexpected-ai-powered-strategies-for-improving-your-vessel-efficiency" target="_blank">3 unexpected AI-powered strategies for improving your vessel efficiency</a> — wartsila.com</div></div>
